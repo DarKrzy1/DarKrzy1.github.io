@@ -1,0 +1,222 @@
+/* zmienne globalne */
+:root {
+    --col-orange: #f0c53a;
+    --col-darkpurple: #5225bc;
+    --col-purple: #7952d3;
+    --col-lightpurple: #d4c7f3;
+    --col-darkgray: #171717;
+    --col-lightgray: #d4d4d4;
+
+    /* --my-font-header: Oswald, sans-serif;
+    font-family: 'oswald'; */
+
+    --my-trnsition-fast: 0.3s;
+    --my-trnsition-medium: 0.6s;
+    --my-trnsition-slow: 1s;
+
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* body{
+    margin:0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.row{
+    margin-right:0;
+    margin-left:0;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--my-font-header);
+} */
+
+/* sekcja hero */
+.hero {
+    background-color: var(--col-darkpurple);
+    color: var(--col-orange);
+    padding-top: 70px;
+}
+
+.actions {
+    background-color: var(--col-orange);
+    color: var(--col-darkpurple);
+}
+
+.actions i {
+    font-size: 3em;
+}
+
+.actions h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.actions section {
+    padding: 1em;
+}
+
+.btn-purple {
+    background-color: var(--col-darkpurple);
+    color: var(--col-orange);
+}
+
+.btn-purple:hover {
+    background-color: var(--col-purple);
+    color: var(--col-darkpurple);
+}
+
+.contact_address {
+    background-color: var(--col-darkgray);
+    color: var(--col-orange);
+    padding: 1em;
+}
+
+.contact_form {
+    background-color: var(--col-orange);
+    color: var(--col-darkpurple);
+    padding: 1em;
+}
+
+footer {
+    background-color: var(--col-darkpurple);
+    color: var(--col-lightpurple);
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+footer ul li a, footer ul li a:visited {
+    display: block;
+    font-size: 1.2em;
+    color: var(--col-lightpurple);
+    text-decoration: none;
+    border-bottom: 1px solid var(--col-purple);
+    padding: 0px 5px;
+}
+
+.info {
+    min-height: 530px;
+}
+
+.maxi {
+    padding: 30px;
+    box-shadow: 0px 0px 0px #000;
+}
+
+.maxi img {
+    width: 64px;
+    transition: width 1s;
+}
+
+.maxi .navbar-text, .mavi .nav-link {
+    font-size: 1.2em;
+    transition: font-size 1s;
+}
+
+.mini {
+    padding: 10px;
+    box-shadow: 0px 0px 0px #000;
+}
+
+.mini .navbar-text, .mini .nav-link {
+    font-size: 1.2em;
+    transition: font-size 1s;
+}
+
+.mini img {
+    width: 40px;
+    transition: width 1s;
+}
+
+.relations {
+    background-color: var(--col-darkgray);
+}
+
+.testimonials {
+    font-size: 1.1em;
+    font-style: italic;
+    padding: 3em 1.5em;
+}
+
+.text-darkpurple {
+    color: var(--col-darkpurple);
+}
+
+.to-bottom {
+    position:absolute;
+    bottom: 1em;
+}
+
+.triangle-top {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 50px solid var(--col-darkgray);
+}
+
+.triangle-bottom {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-top: 50px solid var(--col-darkgray);
+}
+
+.wave-top{
+    background: url("../img/top.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin-bottom: -2px;
+}
+
+.wave-bottom{
+    background: url("../img/top.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin-top: -2px;
+    transform: rotate(180deg);
+}
+
+@media (min-width: 992px) {
+    .relations .pt-lg-4 {
+        padding-top: 2em !important;
+    }
+}
+
+#menu {
+    background-color: var(--col-darkpurple);
+    transition: all 1s;
+}
+
+#menu .active {
+    background-color: var(--col-lightpurple);
+    color: var(--col-darkpurple);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#menu .navbar-text, #menu .nav-link {
+    color: var(--col-orange);
+}
+
+#menu .navbar-toggler {
+    border: 2px solid var(--col-orange);
+}
+
+#menu .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28240, 197, 58, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
